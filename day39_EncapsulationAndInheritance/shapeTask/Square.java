@@ -3,8 +3,8 @@ package day39_EncapsulationAndInheritance.shapeTask;
 public class Square extends Shape{
     private double side;
 
-    public Square(String name, double side) {
-        super(name);
+    public Square( double side) {
+        super("Square");
        setSide(side);
     }
 
@@ -38,8 +38,8 @@ public class Square extends Shape{
     public String toString() {
         return "Square{" +
                 "side=" + side +
-                ", area=" + side +
-                ", perimeter=" + side +
+                ", area=" + area() +
+                ", perimeter=" + perimeter() +
                 '}';
     }
 }
